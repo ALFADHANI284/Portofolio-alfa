@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 @media only screen and (max-width: 600px) {
 }
-
 /* GENERAL */
 * {
   box-sizing: border-box; /* Termasuk padding dan border dalam total lebar dan tinggi elemen */
@@ -16,7 +15,18 @@ body {
   width: 100%;
   margin: 0;
   overflow-x: hidden; /* Mencegah geser horizontal */
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .perkenalan {
@@ -33,7 +43,7 @@ p {
 .icon {
   height: 2rem;
   width: 2rem;
-  margin: 0 0.5rem;
+  margin: 0 0.1rem;
 }
 
 /* HERO */
@@ -108,6 +118,7 @@ p {
   text-align: center;
   transition: transform 0.3s ease-in-out;
   color: var(--text-alt);
+  width: 100%;
 }
 
 #grid__tl__btn,
@@ -188,7 +199,7 @@ article p {
 .teks {
   font-size: 20px;
   text-align: left;
-  margin: 1rem;
+  margin: 0.3rem;
 }
 
 .logo-telkom {
@@ -239,7 +250,7 @@ article p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.2rem;
 }
 
 .experience__skill {
@@ -255,7 +266,7 @@ article p {
 .experience__skill div {
   display: flex;
   align-items: center;
-  width: 10rem;
+  width: 9rem;
   height: fit-content;
 }
 
@@ -309,7 +320,8 @@ article p {
 
 .project__img {
   width: 100%; /* Pastikan gambar mengambil lebar penuh dari kontainer mereka */
-  height: auto; /* Pertahankan rasio aspek */
+  height: 50%; /* Pertahankan rasio aspek */
+  
 }
 
 .project__title {
@@ -328,9 +340,9 @@ article p {
 }
 
 .btn {
-  color: #ffffff;
+  color: #00b4f0;
   transition: all 300ms ease;
-  background-color: #00b4f0;
+  background-color: #ffffff;
   border-radius: 0;
   height: 3rem;
   flex-basis: 50%;
@@ -427,7 +439,15 @@ article p {
   margin-top: 0.5rem;
 }
 
-.a {
+.a{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #00b4f0;
+}
+
+.logo{
+  width: 18rem;
+  height: auto;
+  position: fixed;
+  margin-left: 3rem;
+  margin-top: 14rem;
 }
