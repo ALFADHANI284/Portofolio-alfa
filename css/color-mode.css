@@ -28,7 +28,7 @@ body:after {
   --corner: #000000;
   --bg-alt: #000000;
   --bg-alt-2: #ffffff;
-  --bg-transparent: #d6d1d1f5;
+  --bg-transparent:transparent;
   --border: 0.01rem solid #ffffff;
   --text1: #000000;
   --moon: url(../assets/icons/moon.png);
