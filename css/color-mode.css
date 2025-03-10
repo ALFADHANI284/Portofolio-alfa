@@ -10,7 +10,7 @@ body:after {
 
 :root {
   /* Colors */
-  --bg: lightblue;
+  --bg: #ffffff;
   --corner: #ffffff;
   --bg-alt: #ffffff;
   --bg-alt-2: #f0f0f0;
@@ -24,7 +24,7 @@ body:after {
 /* DARK MODE */
 
 :root.dark-mode {
-  --bg: #1e1d1d;
+  --bg: #000000;
   --corner: #000000;
   --bg-alt: #000000;
   --bg-alt-2: #ffffff;
