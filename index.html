@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-<!--   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Alfa Dhani Fahrezan</title>
   <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
@@ -12,10 +12,13 @@
   <script src="./js/project-slideshow.js" defer></script>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/color-mode.css" />
-  <meta name="theme-color" content="FFFFFF">
 </head>
 
 <body>
+  <!-- <video class="video-background" autoplay loop muted>
+    <source src="2024-12-07 18-12-39.mkv" type="video/mp4">
+    </video> -->
+<!-- <img src="logo 1-02.png" class="logo"> -->
   <div id="hero">
     <h5 class="perkenalan">Hallo Saya Alfa Dhani Fahrezan</h5>
     <p class="perkenalan">Saya seorang pelajar</p>
@@ -33,7 +36,7 @@
             <article>
               <img src="/assets/icons/th.jpeg" alt="Cv logo" class="icon-cv" />
               <h2>CV</h2>
-              <a href="/assets/pdf/alfa cv.pdf" download>
+              <a href="/assets/pdf/alfa cv.pdf" download class="a">
                 <p class="dwn">Download</p>
               </a>
             </article>
@@ -199,10 +202,12 @@
             <img class="project__img project-2" src="assets/portfolio-projects/Ruan mei.png" alt="project-2" />
             <h2 class="project__title">Ruan Mei</h2>
             <button class="btn">
-              <!-- Demo -->
+              <a href="https://pin.it/cimt1HwPg" target="_blank" class="a"><p>Pinterest</p></a>
             </button>
             <button class="btn">
-              <!-- GitHub -->
+             <a href="https://dribbble.com/shots/25617627-Ruan-mei?utm_source=Clipboard_Shot&utm_campaign=alfadf&utm_content=Ruan%20mei&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=alfadf&utm_content=Ruan%20mei&utm_medium=Social_Share" class="a">
+              <p>Dribbble</p>
+              </a>
             </button>
           </div>
           <div class="project">
@@ -234,6 +239,10 @@
             <button class="btn">
               <p>Dribbble</p>
             </button>
+          </div>
+          <div class="project">
+            <img class="project__img project-3" src="assets/portfolio-projects/Gedung a.png" alt="Project 4" />
+            <h2 class="project__title">Vector depan ruangan 2.1</h2>
           </div>
           <button class="arrow" onclick="navigateProject(-1)">
             &#10094;
@@ -270,5 +279,16 @@
   <div id="color-mode" style="background-color: rgb(93, 93, 93);">
     <div id="toggle-button" class="icon" style="background-color: white; border-radius: 50px;"></div>
   </div>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        alert('Klik kanan dinonaktifkan.');
+    });
+
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      alert('Klik kanan dinonaktifkan.');
+  });
+</script>
 </body>
 </html>
