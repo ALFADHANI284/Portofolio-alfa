@@ -10,11 +10,11 @@ body:after {
 
 :root {
   /* Colors */
-  --bg: #ffffff;
+  --bg: lightblue;
   --corner: #ffffff;
   --bg-alt: #ffffff;
   --bg-alt-2: #f0f0f0;
- --bg-transparent: #ffffffe8;
+  --bg-transparent: transparent;
   --border: 0.01rem solid #000000;
   --text: #00b4f0;
   --text-alt: #00b4f0;
@@ -24,12 +24,12 @@ body:after {
 /* DARK MODE */
 
 :root.dark-mode {
-  --bg: #363333;
-  --corner: #ffffff;
-  --bg-alt: #ffffff;
+  --bg: #1e1d1d;
+  --corner: #000000;
+  --bg-alt: #000000;
   --bg-alt-2: #ffffff;
-  --bg-transparent: #333333f5;
-  --border: 0.01rem solid #000000;
+  --bg-transparent: #d6d1d1f5;
+  --border: 0.01rem solid #ffffff;
   --text1: #000000;
   --moon: url(../assets/icons/moon.png);
 }
@@ -63,3 +63,4 @@ body:after {
 .dark-mode #color-mode {
   justify-content: flex-end;
 }
+
